@@ -1,0 +1,8 @@
+.moodToggler {
+    display: inline-flex;
+    border: 1px solid black;
+    padding: 15px;
+    width: 30px;
+    height: 25px;
+    transform: rotate(90deg);
+}

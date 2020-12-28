@@ -3,7 +3,8 @@ import Navbar from './Navbar'
 import Greeter from './Greeter'
 import Counter from './Counter'
 import MoodToggler from './MoodToggler'
-import './App.css';
+import './Counter.css';
+import './MoodToggler.css';
 
 function App() {
   return (
