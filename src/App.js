@@ -3,18 +3,20 @@ import Navbar from './Navbar'
 import Greeter from './Greeter'
 import Counter from './Counter'
 import MoodToggler from './MoodToggler'
-import './Counter.css';
-import './MoodToggler.css';
+import Cart from './Cart'
+import './index.css';
+
+const items = [
+    {id: 1, name: 'XBox Series X', price: 449.00, qty: 1},
+    {id: 2, name: 'XBox Series S', price: 249.00, qty: 2},
+    {id: 3, name: 'Playstation 5', price: 449.00, qty: 1},
+    {id: 4, name: 'Playstation 5 Digital Edition', price: 349.00, qty: 1},
+]
 
 function App() {
   return (
       <>
-          <Counter step={5} />
-          <Counter/>
-          <MoodToggler />
-          <Navbar/>
-          <Greeter name="Kai" age="1" excitementLevel={10} />
-          <Greeter name="Liah" age="6" excitementLevel={20} />
+          <Cart initialItems={items} />
       </>
   )
 }
