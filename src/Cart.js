@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import CartItem from './CartItem';
 
+import './Cart.scss'
+
 function Cart({ initialItems }) {
 
     const [items, setItems] = useState(initialItems)
