@@ -4,7 +4,7 @@ import Greeter from './Greeter'
 import Counter from './Counter'
 import MoodToggler from './MoodToggler'
 import Cart from './Cart'
-import './index.scss';
+import './App.scss';
 
 const items = [
     {id: 1, name: 'XBox Series X', price: 449.00, qty: 1},
