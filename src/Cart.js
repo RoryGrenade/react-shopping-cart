@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import CartItem from './CartItem';
+import { BiCart } from "react-icons/bi";
 
 import './Cart.scss'
 
@@ -20,8 +21,8 @@ function Cart({ initialItems }) {
     const grandTotal = items.reduce((total, item) => (total + item.qty * item.price), 0).toFixed(2)
     return (
         <div className="cart">
-            <div className="cart__title-border-wrapper">
-                <h1 className="cart__title">Shopping Cart</h1>
+            <div className="cart__title-wrapper">
+                <h1 className="cart__title">Shopping Cart<BiCart className="cart__title-icon" /></h1>
             </div>
             <div className="cart__items-wrapper">
                 {items.map(item => (

@@ -12,14 +12,13 @@ $spacing-half: 20px;
   padding: $spacing-base;
 }
 
-.cart__title-border-wrapper {
-  position: relative;
+.cart__title-wrapper {
   padding: 0 0 3px;
   margin: 0 0 $spacing-base;
   background: linear-gradient(to right, deepskyblue, darkslateblue, deepskyblue);
   background-size: 200% 100%;
   background-position: 100% 100%;
-  animation: animatedgradient 1s ease 1s;
+  animation: animatedgradient 1s ease 0.5s;
 }
 
 @keyframes animatedgradient {
@@ -32,9 +31,15 @@ $spacing-half: 20px;
 }
 
 .cart__title {
+  display: flex;
+  align-items: center;
   background-color: white;
   margin: 0;
   padding: 0 0 $spacing-half;
+}
+
+.cart__title-icon {
+  margin: 0 0 0 10px;
 }
 
 .cart__items-wrapper {
