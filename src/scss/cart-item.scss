@@ -1,15 +1,23 @@
 @import "mixins";
+@import "vars";
 
 .cart-item {
   flex: 1;
   padding: 0 10px;
+  margin: 0 0 $spacing-half;
+  &:last-child {
+    margin: 0;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    margin: 0;
+  }
 }
 
 .cart-item__qty-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 60%;
+  max-width: 150px;
 }
 
 .cart-item__button {
