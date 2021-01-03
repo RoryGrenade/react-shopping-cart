@@ -1,10 +1,6 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Greeter from './Greeter'
-import Counter from './Counter'
-import MoodToggler from './MoodToggler'
 import Cart from './Cart'
-import './App.scss';
+import './scss/App.scss';
 
 const items = [
     {id: 1, name: 'XBox Series X', price: 449.00, qty: 1},

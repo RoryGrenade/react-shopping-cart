@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import CartItem from './CartItem';
 import { BiCart } from "react-icons/bi";
 
-import './Cart.scss'
+import './scss/Cart.scss'
 
 function Cart({ initialItems }) {
 

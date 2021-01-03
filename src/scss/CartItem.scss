@@ -11,7 +11,7 @@
 }
 
 .cart-item__button {
-  background: white;
+  background: darkslateblue;
   border: none;
   width: 40px;
   height: 40px;
@@ -24,6 +24,15 @@
   overflow: hidden;
   background-size: cover;
   position: relative;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  &.-subtract {
+    mask-image: url("../img/masks/remove-circle-outline.svg");
+  }
+  &.-add {
+    mask-image: url("../img/masks/add-circle-outline.svg");
+  }
   &:before {
     content: '';
     display: none;
@@ -51,14 +60,5 @@
   }
   100% {
     background-position: 100% 100%;
-  }
-}
-
-.cart-item__icon {
-  color: darkslateblue;
-  position: relative;
-  .cart-item__button:hover & {
-    color: white;
-    background: transparent;
   }
 }
