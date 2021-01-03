@@ -1,0 +1,14 @@
+@mixin mixin-linear-gradient {
+  background: linear-gradient(to right, deepskyblue, darkslateblue, deepskyblue);
+  background-size: 200% 100%;
+  background-position: 100% 100%;
+}
+
+@keyframes keyframes-linear-gradient {
+  0% {
+    background-position: 300% 100%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}

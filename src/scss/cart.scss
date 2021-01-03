@@ -1,5 +1,5 @@
-$spacing-base: 40px;
-$spacing-half: 20px;
+@import "mixins";
+@import "vars";
 
 .cart {
   display: flex;
@@ -15,19 +15,8 @@ $spacing-half: 20px;
 .cart__title-wrapper {
   padding: 0 0 3px;
   margin: 0 0 $spacing-base;
-  background: linear-gradient(to right, deepskyblue, darkslateblue, deepskyblue);
-  background-size: 200% 100%;
-  background-position: 100% 100%;
-  animation: animatedgradient 1s ease 0.5s;
-}
-
-@keyframes animatedgradient {
-  0% {
-    background-position: 300% 100%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
+  @include mixin-linear-gradient;
+  animation: keyframes-linear-gradient 1s ease 1s;
 }
 
 .cart__title {

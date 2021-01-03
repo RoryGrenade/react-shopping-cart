@@ -1,7 +1,5 @@
 import React from 'react';
-import { IoAddCircleOutline, IoRemoveCircleOutline  } from "react-icons/io5";
-
-import './scss/CartItem.scss';
+import './scss/cart-item.scss';
 
 function CartItem({id, name, price, qty, updateQty}) {
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Cart from './Cart'
-import './scss/App.scss';
+import './scss/app.scss';
 
 const items = [
     {id: 1, name: 'XBox Series X', price: 449.00, qty: 1},
